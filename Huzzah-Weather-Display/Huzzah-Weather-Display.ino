@@ -186,7 +186,7 @@ void drawFrame1(int x, int y) {
   display.setFontScale2x2(true);
   display.drawString(64 + x, 20 + y, String(weather.getCurrentTemp()) + "F");
   display.setFontScale2x2(false);
-  display.drawString(50 + x, 40 + y, String(weather.getCurrentSummary()));
+  display.drawString(64 + x, 40 + y, String(weather.getCurrentSummary()));
 }
 
 void drawFrame2(int x, int y) {
@@ -204,9 +204,7 @@ void drawFrame3(int x, int y) {
   display.setFontScale2x2(false);
   display.drawString(65 + x, 7 + y, "Tomorrow");
   display.setFontScale2x2(true);
-  display.drawString(64 + x, 20 + y, String(weather.getMaxTempTomorrow()) + "F max");
-   display.setFontScale2x2(false);
-  display.drawString(66 + x, 40 + y, String(weather.getMinTempTomorrow()) + "F min");
+  display.drawString(64 + x, 20 + y, String(weather.getMaxTempTomorrow()) + "F");
 }
 
 void drawSpinner(int count, int active) {
